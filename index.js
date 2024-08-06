@@ -27,6 +27,7 @@ res.send(response);
 
     }catch(err){
         console.log(err);
+        res.send(200).json({err})
     }
 });
 app.listen(8000,async()=>{
